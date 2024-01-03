@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
                         <a target='new' href={Bio.github}><GitHubImg src="https://www.chillcode.org/img/Icons/icon_github.png" alt="github-image" /></a>
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <Title>Hi, I am</Title> Passionate FullStack developer specializing in ASP.NET, dedicated to turning projects into masterpieces. <br /> <Title>{Bio.name}</Title>
                         <TextLoop>
                             I am a
                             <Span>

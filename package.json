@@ -1,7 +1,6 @@
 {
   "name": "portfolio-is",
   "version": "0.1.0",
-  "homepage": "https://ignacystarczynski.github.io/Portfolio",
   "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
