@@ -65,7 +65,7 @@ const Card = styled.div`
     }
 
     border: 0.1px solid #FFF;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 4px 24px;
 `
 
 const Top = styled.div`

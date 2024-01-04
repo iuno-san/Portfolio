@@ -23,7 +23,7 @@ const Navbar = () => {
             setIsOpen(!isOpen)
           }} />
         </MobileIcon>
-        <NavItems>
+        <NavItems className='custom'>
           <NavLink href="#about">About</NavLink>
           <NavLink href='#skills'>Technology</NavLink>
           <NavLink href='#experience'>Experience</NavLink>
@@ -31,11 +31,11 @@ const Navbar = () => {
           <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <CVButton href={Bio.resume} target="_blank">Check CV</CVButton>
+          <CVButton href={Bio.resume} target="_blank">Download CV</CVButton>
         </ButtonContainer>
         {
           isOpen &&
-          <MobileMenu isOpen={isOpen}>
+          <MobileMenu isOpen={isOpen} className='custom'>
             <MobileLink href="#about" onClick={() => {
               setIsOpen(!isOpen)
             }}>About</MobileLink>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <MobileLink href='#contact' onClick={() => {
               setIsOpen(!isOpen)
             }}>Contact</MobileLink>
-            <CVButton style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}} href={Bio.github} target="_blank">Github Profile</CVButton>
+            <CVButton style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}} href={Bio.resume} target="_blank">Download CV</CVButton>
           </MobileMenu>
         }
       </NavbarContainer>

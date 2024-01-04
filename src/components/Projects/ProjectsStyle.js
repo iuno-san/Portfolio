@@ -2,13 +2,13 @@ import styled from 'styled-components';
 import _default from '../../themes/default';
 
 export const Container = styled.div`
-    background: linear-gradient(343.07deg, rgba(132, 59, 206, 0.06) 5.71%, rgba(132, 59, 206, 0) 64.83%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
     z-index: 1;
     align-items: center;
+    background: ${({ theme }) => theme.white};
 `;
 
 export const Wrapper = styled.div`
@@ -27,13 +27,11 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.div`
-font-size: 42px;
+font-size: 3rem;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
   color: ${({ theme }) => theme.black};
   @media (max-width: 768px) {
-      margin-top: 12px;
       font-size: 32px;
   }
 `;
@@ -42,9 +40,10 @@ export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
+    margin-top: 60px;
     color: ${({ theme }) => theme.black + 99};
     @media (max-width: 768px) {
-        margin-top: 12px;
+        margin-top: 30px;
         font-size: 16px;
         padding: 0 1rem;
     }

@@ -2,6 +2,8 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
+import flameLogoImg from '../../images/flame.png'
+import codeLogoImg from '../../images/code.png'
 
 const Container = styled.div`
 width: 100%;
@@ -162,7 +164,7 @@ const Button = styled.a`
     color: ${({ theme }) => theme.text_primary};
     padding: 12px 16px;
     border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme.white};
     ${({ dull, theme }) => dull && `
         background-color: ${theme.bgLight};
         color: ${theme.text_secondary};
@@ -229,10 +231,10 @@ const Index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
+                        <Button dull href={project?.github} target='new'><img className='icon' src={codeLogoImg}/> View Code</Button>
                         {/* Conditionally render the "View Live App" button */}
                         {isWebAppAvailable && (
-                            <Button href={project?.webapp} target='new'>View Live App</Button>
+                            <Button href={project?.webapp} target='new'><img className='icon' src={flameLogoImg}/> View Live App</Button>
                         )}
                     </ButtonGroup>
                 </Wrapper>

@@ -27,10 +27,9 @@ gap: 12px;
 `
 
 export const Title = styled.div`
-font-size: 42px;
+font-size: 3rem;
 text-align: center;
 font-weight: 600;
-margin-top: 40px;
   color: ${({ theme }) => theme.white};
   @media (max-width: 768px) {
       margin-top: 32pxpx;
@@ -42,6 +41,7 @@ export const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
+    margin-top: 60px;
     color: ${({ theme }) => theme.white};
     @media (max-width: 768px) {
         font-size: 16px;
@@ -63,10 +63,10 @@ const Skill = styled.div`
   max-width: 500px;
   background: ${({ theme }) => theme.card_light};
   border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
   padding: 18px 36px;
   border: 3px solid black;
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 4px 24px;
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -126,9 +126,9 @@ const Skills = () => {
   return (
     <Container id="skills">
       <Wrapper>
-        <Title>Technology💻</Title>
-        <Desc>Here are some of my technologies that I have been working with over the last 2 years.
+        <Desc>Some of my
         </Desc>
+        <Title>Technology</Title>
         <SkillsContainer>
           {skills.map((skill) => (
             <Skill>

@@ -9,7 +9,7 @@ const FooterContainer = styled.div`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+  background-color: ${({ theme }) => theme.dark};
 `;
 
 
@@ -21,13 +21,13 @@ const FooterWrapper = styled.footer`
   gap: 14px;
   align-items: center;
   padding: 1rem;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.white};
 `;
 
 const Logo = styled.h1`
   font-weight: 600;
   font-size: 20px;
-  color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
 `;
 
 const Nav = styled.nav`
@@ -48,12 +48,12 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled.a`
-color: ${({ theme }) => theme.text_primary};
+color: ${({ theme }) => theme.white};
   text-decoration: none;
   font-size: 1.2rem;
   transition: color 0.2s ease-in-out;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
   }
   @media (max-width: 768px) {
     font-size: 1rem;
@@ -69,10 +69,10 @@ const SocialMediaIcon = styled.a`
   display: inline-block;
   margin: 0 1rem;
   font-size: 1.5rem;
-  color: ${({ theme }) => theme.text_primary};
+  color: ${({ theme }) => theme.white};
   transition: color 0.2s ease-in-out;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
   }
 `;
 

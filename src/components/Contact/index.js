@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Snackbar } from '@mui/material';
+import mailLogoImg from '../../images/email.png'
+import phoneLogoImg from '../../images/phone.png'
 
 const Container = styled.div`
 display: flex;
@@ -14,7 +16,7 @@ align-items: center;
 @media (max-width: 960px) {
     padding: 0px;
 }
-background: ${({ theme }) => theme.dark};
+background: ${({ theme }) => theme.white};
 `
 
 const Wrapper = styled.div`
@@ -33,13 +35,11 @@ gap: 12px;
 `
 
 const Title = styled.div`
-font-size: 42px;
+font-size: 3rem;
 text-align: center;
 font-weight: 600;
-margin-top: 40px;
-  color: ${({ theme }) => theme.light};
+  color: ${({ theme }) => theme.dark};
   @media (max-width: 768px) {
-      margin-top: 32px;
       font-size: 32px;
   }
 `;
@@ -48,76 +48,15 @@ const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
-    color: ${({ theme }) => theme.light};
+    margin-top: 60px;
+    color: ${({ theme }) => theme.dark};
     @media (max-width: 768px) {
-        margin-top: 12px;
+        margin-top: 30px;
         font-size: 16px;
         padding: 0 1rem;
     }
 `;
 
-
-const ContactForm = styled.form`
-  width: 95%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  background-color: ${({ theme }) => theme.card_light};
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: rgba(255, 255, 255, 0.15) 0px 4px 24px;
-  margin-top: 28px;
-  gap: 12px;
-`
-
-const ContactTitle = styled.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.dark};
-`
-
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.dark};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.dark};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.dark};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.dark};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactButton = styled.input`
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-  background: ${({ theme }) => theme.dark};
-  padding: 13px 16px;
-  margin-top: 2px;
-  border-radius: 12px;
-  border: none;
-  color: ${({ theme }) => theme.light};
-  font-size: 18px;
-  font-weight: 600;
-`
 
 
 
@@ -144,23 +83,26 @@ const Contact = () => {
     <Container id="contact">
       <div className='line'></div>
       <Wrapper>
-        <Title>Contact⚡️</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me:</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInput placeholder="Subject" name="subject" />
-          <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
-        </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={6000}
-          onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+        <Desc>Get in Touch</Desc>
+        <Title>Contact Me</Title>
+        <div className='contact-info-upper-container'>
+        <div className='contact-info-container custom'>
+          <img
+            src={mailLogoImg}
+            alt="Email icon"
+            className='icon contact-icon email-icon'
+          />
+          <p><a href="mailto:examplemail@gmail.com">ignacysan27@gmail.com</a></p>
+        </div>
+        <div className='contact-info-container custom'>
+          <img
+            src={phoneLogoImg}
+            alt="Phone icon"
+            className='icon contact-icon'
+          />
+          <p><a href="tel:+506219780">+48 | 506219780</a></p>
+        </div>
+      </div>
       </Wrapper>
     </Container>
   )

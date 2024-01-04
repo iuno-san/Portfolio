@@ -42,10 +42,9 @@ export const HeroInnerContainer = styled.div`
   position: relative;
   display: block;
   align-items: center;
+  max-width: 700px;
   width: 100%;
-  max-width: 1100px;
   text-align: center;
-  max-width: 500px;
 
   @media (max-width: 960px) {
     flex-direction: column;
@@ -110,6 +109,7 @@ export const TextLoop = styled.div`
   font-size: 32px;
   display: flex;
   gap: 12px;
+  justify-content: center;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {

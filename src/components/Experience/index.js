@@ -39,13 +39,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
+font-size: 3rem;
 text-align: center;
 font-weight: 600;
-margin-top: 20px;
   color: ${({ theme }) => theme.white};
   @media (max-width: 768px) {
-      margin-top: 12px;
       font-size: 32px;
   }
 `;
@@ -54,9 +52,10 @@ const Desc = styled.div`
     font-size: 18px;
     text-align: center;
     max-width: 600px;
+    margin-top: 60px;
     color: ${({ theme }) => theme.white};
     @media (max-width: 768px) {
-        margin-top: 12px;
+        margin-top: 30px;
         font-size: 16px;
         padding: 0 1rem;
     }
@@ -79,10 +78,10 @@ const index = () => {
     return (
         <Container id="experience">
             <Wrapper>
-                <Title>Experience🚀</Title>
                 <Desc>
-                My professional experience as a FullStack Developer and C#
+                    Explore My
                 </Desc>
+                <Title>Experience</Title>
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (

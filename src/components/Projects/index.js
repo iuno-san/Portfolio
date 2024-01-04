@@ -6,21 +6,15 @@ import { projects } from '../../data/constants'
 
 
 const Projects = ({openModal,setOpenModal}) => {
-  const [toggle, setToggle] = useState('all');
+  const [toggle, setToggle] = useState('dotnet app');
   return (
     <Container id="projects">
       <Wrapper>
-        <Title>My Projects🍂</Title>
-        <Desc>
-          I have worked on a wide range of web applications. Here are some of my projects.
+      <Desc>
+          Browse My Recent
         </Desc>
+        <Title>Projects</Title>
         <ToggleButtonGroup >
-          {toggle === 'all' ?
-            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-            :
-            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
-          }
-          <Divider />
           {toggle === 'dotnet app' ?
             <ToggleButton active value="dotnet app" onClick={() => setToggle('dotnet app')}>.NET App's</ToggleButton>
             :
@@ -37,6 +31,12 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton active value="live app" onClick={() => setToggle('live app')}>Live App's</ToggleButton>
             :
             <ToggleButton value="live app" onClick={() => setToggle('live app')}>Live App's</ToggleButton>
+          }
+          <Divider />
+          {toggle === 'all' ?
+            <ToggleButton active value="all" onClick={() => setToggle('all')}>All</ToggleButton>
+            :
+            <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
         </ToggleButtonGroup>
         <CardContainer>
