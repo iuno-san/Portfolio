@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Document = styled.img`
     display: none;
     height: 100%;
-    width: fit-content;
+    width: 100%;
     border-radius: 10px;
     &:hover{
         cursor: pointer;
