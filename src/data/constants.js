@@ -257,11 +257,11 @@ export const projects = [
     description:
       "My portfolio that I created in React using the latest programming tools and libraries.",
     image:
-      "https://raw.githubusercontent.com/iuno-san/Portfolio/main/portfolio-demo.png",
-    tags: ["React Js", "Portfolio", "JS libraries", "CSS"],
+      "https://raw.githubusercontent.com/iuno-san/Portfolio/main/Main-section.png",
+    tags: ["React Js", "Portfolio", "JS libraries", "APP"],
     category: ["react app", "live app"],
     github: "https://github.com/iuno-san/Portfolio",
-    webapp: "https://www.ignacystarczynski.com",
+    webapp: "https://ignacystarczynski.com",
     member: [
       {
         name: "Ignacy Starczynski",
