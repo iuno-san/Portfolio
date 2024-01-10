@@ -105,7 +105,7 @@ export const experiences = [
     img: "https://raw.githubusercontent.com/iuno-san/CustomRedirect/main/Logo_4AdStudio.png",
     role: "FullStack Developer",
     company: "4AdStudio",
-    date: "October 2023 - Present",
+    date: "September 2023 - Present",
     desc: "As a FullStack Developer at 4AdStudio, I had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Together we created advanced online stores using the latest technologies.",
     skills: [
       "Worked with the team",
@@ -257,7 +257,7 @@ export const projects = [
     description:
       "My portfolio that I created in React using the latest programming tools and libraries.",
     image:
-      "https://raw.githubusercontent.com/iuno-san/Portfolio/main/Main-section.png",
+      "https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/Main-section.png",
     tags: ["React Js", "Portfolio", "JS libraries", "APP"],
     category: ["react app", "live app"],
     github: "https://github.com/iuno-san/Portfolio",
