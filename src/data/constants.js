@@ -48,9 +48,9 @@ export const skills = [
           "https://vectorwiki.com/images/kYNj1__blazor.svg",
       },
       {
-        name: "jQuery",
+        name: "Angular",
         image:
-          "https://www.vectorlogo.zone/logos/jquery/jquery-vertical.svg",
+          "https://www.vectorlogo.zone/logos/angular/angular-icon.svg",
       },
     ],
   },
@@ -76,23 +76,18 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg",
       },
       {
-        name: "MySQL",
+        name: "PostgreSQL",
         image:
-          "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
+          "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg",
       },
       {
-        name: "MSQL Server",
+        name: "MSSQL Server",
         image: "https://www.vectorlogo.zone/logos/azurecontainerregistry/azurecontainerregistry-icon.svg"
       },
       {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
-      },
-      {
-        name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
     ],
   },
@@ -210,7 +205,7 @@ export const projects = [
   {
     id: 3,
     title: "TTodo",
-    date: "December 2023 - December 2023",
+    date: "December 2023",
     description:
       "TToDO is a minimalistic React application that allows you to add, remove and edit tasks in a simple way. The intuitive interface allows you to effectively manage your daily tasks, providing the user with ease of use and quick access to editing and deleting functions. Perfect for simple monitoring and organization of everyday tasks.",
     image:
@@ -273,7 +268,7 @@ export const projects = [
   {
     id: 6,
     title: "FinanceFocus",
-    date: " January 20024",
+    date: " January 2024",
     description:
       "FinanseFocus is an application created in Angular that allows you to manage your budget in a simple and effective way. It uses CRUD operations, allowing you to add, edit, delete and view expenses.",
     image:
