@@ -194,7 +194,7 @@ export const projects = [
       "HexaLingo is an innovative application designed to effectively learn various languages ​​in a quick and enjoyable way. Thanks to its simple interface and advanced functions, HexaLingo provides users with full support in acquiring new language skills.",
     image:
       "https://raw.githubusercontent.com/iuno-san/HexaLingo/main/HexaLingo/wwwroot/img/others/Baner_Main.png",
-    tags: [".NET", "MVC", "Learning", "VPS-server",],
+    tags: ["ASP.NET", "MVC", "Learning", "VPS-server",],
     category: ["dotnet app", "live app"],
     github: "https://github.com/iuno-san/HexaLingo",
     webapp: "https://hexalingo.com/",
@@ -236,7 +236,7 @@ export const projects = [
       "A project that aims to help users customize the login and registration form on their ASP.NET MVC website using the Identity library.",
     image:
       "https://raw.githubusercontent.com/iuno-san/ASP.NET-IdentityCustom/main/img/Step_10.png",
-    tags: ["ASP.NET", "MVC", "Tutorial", "Identity"],
+    tags: ["ASP.NET", "Tutorial", "Identity"],
     category: "dotnet app",
     github: "https://github.com/iuno-san/ASP.NET-IdentityCustom",
     webapp: "Live app unavailable",
@@ -261,6 +261,27 @@ export const projects = [
     category: ["react app", "live app"],
     github: "https://github.com/iuno-san/Portfolio",
     webapp: "https://ignacystarczynski.com",
+    member: [
+      {
+        name: "Ignacy Starczynski",
+        img: "https://avatars.githubusercontent.com/u/117463347?s=64&v=4",
+        linkedin: "https://www.linkedin.com/in/ignacy-starczynski-8030b2284/",
+        github: "https://github.com/iuno-san",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "FinanceFocus",
+    date: " January 20024",
+    description:
+      "FinanseFocus is an application created in Angular that allows you to manage your budget in a simple and effective way. It uses CRUD operations, allowing you to add, edit, delete and view expenses.",
+    image:
+      "https://raw.githubusercontent.com/iuno-san/FinanseFocus/master/FinanseFocus/src/assets/Preview_img.png",
+    tags: ["AngularJs", "Finance", "CRUD", "APP"],
+    category: ["react app"],
+    github: "https://github.com/iuno-san/FinanseFocus",
+    webapp: "Live app unavailable",
     member: [
       {
         name: "Ignacy Starczynski",

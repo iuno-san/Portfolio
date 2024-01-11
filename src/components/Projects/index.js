@@ -22,9 +22,9 @@ const Projects = ({openModal,setOpenModal}) => {
           }
           <Divider />
           {toggle === 'react app' ?
-            <ToggleButton active value="react app" onClick={() => setToggle('react app')}>React App's</ToggleButton>
+            <ToggleButton active value="react app" onClick={() => setToggle('react app')}>React/Angular App's</ToggleButton>
             :
-            <ToggleButton value="react app" onClick={() => setToggle('react app')}>React App's</ToggleButton>
+            <ToggleButton value="react app" onClick={() => setToggle('react app')}>React/Angular App's</ToggleButton>
           }
           <Divider />
           {toggle === 'live app' ?
