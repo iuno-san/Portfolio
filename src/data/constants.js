@@ -96,7 +96,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://raw.githubusercontent.com/iuno-san/CustomRedirect/main/Logo_4AdStudio.png",
+    img: "https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/Logo_4AdStudio.png",
     role: "FullStack Developer",
     company: "4AdStudio",
     date: "September 2023 - Present",
@@ -108,7 +108,7 @@ export const experiences = [
       "Frontend",
       "Backend",
     ],
-    doc: 'https://raw.githubusercontent.com/iuno-san/CustomRedirect/main/4ad-site.jpg',
+    doc: 'https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/4Ad-site.jpg',
   },
   {
     id: 1,
