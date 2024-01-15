@@ -9,7 +9,7 @@ export const Bio = {
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/iuno-san",
-  resume: "https://drive.google.com/file/d/1X5_T3qw7sOCdpct8HHb03ZaJMqoQLOrM/view?usp=sharing",
+  resume: "https://drive.google.com/file/d/1UjIGojmJOazoEX0AY_dKqo_PKkRgr0O9/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/ignacy-starczynski-8030b2284/",
   devComunity: "https://dev.to/iuno-san",
 };
