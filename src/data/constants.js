@@ -153,22 +153,22 @@ export const projects = [
   },
   {
     id: 1,
-    title: "MyEmplo",
-    date: "November 2023 - December 2023",
+    title: "GoodPatient",
+    date: "January 2024 - January 2024",
     description:
-      "MyEmplo is a modern web application built on the ASP.NET Core MVC framework, designed for efficient employee data management within a company. The application stands out not only for its aesthetically pleasing and responsive interface but also for its robust security foundations and advanced clean architecture based on SOLID principles.",
+      "GoodPatient is a modern web application built based on the ASP.NET Core MVC framework, intended for effective management of patients and good work practice of private doctors. The application is built using Clean Architecture and uses SOLID principles. It operates on the AZURE platform and the Microsoft Server SQL database.",
     image:
-      "https://raw.githubusercontent.com/iuno-san/MyEmplo/master/MyEmplo/wwwroot/img/site/maain-site.png",
+      "https://raw.githubusercontent.com/iuno-san/GoodPatient/master/GoodPatient.MVC/wwwroot/img/preview/GoodPatient_Main.png",
     tags: [
       "ASP.NET Core MVC",
-      "Managment system",
-      "C#",
+      "Medical software",
       "SOLID",
+      "Azure",
       "Clean Architecture",
     ],
-    category: "dotnet app",
-    github: "https://github.com/iuno-san/MyEmplo",
-    webapp: "Live app unavailable",
+    category: ["dotnet app", "live app"],
+    github: "https://github.com/iuno-san/GoodPatient",
+    webapp: "https://goodpatient.azurewebsites.net",
     member: [
       {
         name: "Ignacy Starczynski",
@@ -222,15 +222,21 @@ export const projects = [
   },
   {
     id: 4,
-    title: " ASP.NET-IdentityCustom",
-    date: "June 2022 - August 2022",
+    title: "MyEmplo",
+    date: "November 2023 - December 2023",
     description:
-      "A project that aims to help users customize the login and registration form on their ASP.NET MVC website using the Identity library.",
+      "MyEmplo is a modern web application built on the ASP.NET Core MVC framework, designed for efficient employee data management within a company. The application stands out not only for its aesthetically pleasing and responsive interface but also for its robust security foundations and advanced clean architecture based on SOLID principles.",
     image:
-      "https://raw.githubusercontent.com/iuno-san/ASP.NET-IdentityCustom/main/img/Step_10.png",
-    tags: ["ASP.NET", "Tutorial", "Identity"],
+      "https://raw.githubusercontent.com/iuno-san/MyEmplo/master/MyEmplo/wwwroot/img/site/maain-site.png",
+    tags: [
+      "ASP.NET Core MVC",
+      "Managment system",
+      "C#",
+      "SOLID",
+      "Clean Architecture",
+    ],
     category: "dotnet app",
-    github: "https://github.com/iuno-san/ASP.NET-IdentityCustom",
+    github: "https://github.com/iuno-san/MyEmplo",
     webapp: "Live app unavailable",
     member: [
       {
@@ -243,6 +249,27 @@ export const projects = [
   },
   {
     id: 5,
+    title: " ASP.NET-IdentityCustom",
+    date: "June 2022 - August 2022",
+    description:
+      "A project that aims to help users customize the login and registration form on their ASP.NET MVC website using the Identity library.",
+    image:
+      "https://raw.githubusercontent.com/iuno-san/ASP.NET-IdentityCustom/main/img/Step_10.png",
+    tags: ["ASP.NET", "Tutorial", "Identity"],
+    category: "",
+    github: "https://github.com/iuno-san/ASP.NET-IdentityCustom",
+    webapp: "Live app unavailable",
+    member: [
+      {
+        name: "Ignacy Starczynski",
+        img: "https://avatars.githubusercontent.com/u/117463347?s=64&v=4",
+        linkedin: "https://www.linkedin.com/in/ignacy-starczynski-8030b2284/",
+        github: "https://github.com/iuno-san",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "Portfolio",
     date: "December 2023 - January 2024",
     description:
@@ -263,7 +290,7 @@ export const projects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "FinanceFocus",
     date: " January 2024",
     description:
