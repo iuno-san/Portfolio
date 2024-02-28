@@ -96,10 +96,26 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: "https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/Logo_Medyc.png",
+    role: ".NET / Vue.js developer",
+    company: "Medyc",
+    date: "February 2024 - Present",
+    desc: "At Medyc, a company that creates software for the medical sector, I was responsible for API design and front-end development using Vue.js.",
+    skills: [
+      ".NET",
+      "C#",
+      "Vue.js",
+      "TypeScript",
+      "API",
+    ],
+    doc: 'https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/Medyc-site.png',
+  },
+  {
+    id: 1,
     img: "https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/Logo_4AdStudio.png",
     role: "FullStack Developer",
     company: "4AdStudio",
-    date: "September 2023 - Present",
+    date: "September 2023 - January 2024",
     desc: "As a FullStack Developer at 4AdStudio, I had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Together we created advanced online stores using the latest technologies.",
     skills: [
       "Worked with the team",
@@ -111,7 +127,7 @@ export const experiences = [
     doc: 'https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/4Ad-site.jpg',
   },
   {
-    id: 1,
+    id: 2,
     img: "https://www.chillcode.org/img/Icons/icon_c-sharp(1).png",
     role: "C# programming Tutor",
     company: "FreeLancer",
