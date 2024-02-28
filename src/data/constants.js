@@ -118,11 +118,9 @@ export const experiences = [
     date: "September 2023 - January 2024",
     desc: "As a FullStack Developer at 4AdStudio, I had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Together we created advanced online stores using the latest technologies.",
     skills: [
-      "Worked with the team",
+      "TeamWork",
       "Designing Website",
-      "Managment",
-      "Frontend",
-      "Backend",
+      "FullStack",
     ],
     doc: 'https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/4Ad-site.jpg',
   },
@@ -138,7 +136,6 @@ export const experiences = [
       "GitHub",
       "Unity",
       "Design game",
-      "Best Practice",
     ],
 
   },
