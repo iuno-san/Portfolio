@@ -71,7 +71,7 @@ return (
             <MobileLink href='#contact' onClick={() => {
               setIsOpen(!isOpen)
             }}>Contact</MobileLink>
-            <CVButton onClick={() => setCVModalOpen(true)} style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}}>Download CV</CVButton>
+            <CVButton onClick={() => { setCVModalOpen(true); setIsOpen(false);}} style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}}>Download CV</CVButton>
           </MobileMenu>
         }
       </NavbarContainer>

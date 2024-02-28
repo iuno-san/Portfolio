@@ -180,9 +180,9 @@ export const projects = [
       "Azure",
       "Clean Architecture",
     ],
-    category: ["dotnet app", "live app"],
+    category: "dotnet app",
     github: "https://github.com/iuno-san/GoodPatient",
-    webapp: "https://goodpatient.azurewebsites.net",
+    webapp: "Live app unavailable",
     member: [
       {
         name: "Ignacy Starczynski",
