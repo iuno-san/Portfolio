@@ -47,7 +47,7 @@ return (
               <ModalCloseButton onClick={() => setCVModalOpen(false)}>&times;</ModalCloseButton>
             </ModalHeader>
             <ModalBody>
-              <ModalButton onClick={() => window.open(Bio.resume, '_blank')}>Polish </ModalButton>
+              <ModalButton onClick={() => window.open(Bio.resume, '_blank')}>Polski </ModalButton>
               <ModalButton onClick={() => window.open(Bio.resumeEn, '_blank')}>English</ModalButton>
             </ModalBody>
           </ModalContent>
