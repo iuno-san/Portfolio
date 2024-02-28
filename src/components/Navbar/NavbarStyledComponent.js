@@ -220,3 +220,73 @@ export const MobileNavLogo = styled(LinkR)`
     padding: 0 0px;
   }
 `;
+
+export const ModalBackground = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+export const ModalContent = styled.div`
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: auto;
+  max-width: 500px;
+  animation: modalFadeIn 0.3s;
+  position: relative;
+  border: 4px solid black;
+`;
+
+export const ModalHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const ModalTitle = styled.h2`
+  font-size: 24px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.dark};
+`;
+
+export const ModalCloseButton = styled.button`
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 30px; 
+  color: #626060;
+  position: absolute; 
+  top: 10px;
+  right: 20px;
+`;
+
+
+export const ModalBody = styled.div`
+  margin-bottom: 20px;
+  color: #555;
+`;
+
+export const ModalButton = styled.button`
+  border: none;
+  padding: 10px 25px;
+  margin: 10px; 
+  border-radius: 5px;
+  background-color: black; 
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #333; 
+  }
+`;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, CVButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
+import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, CVButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink, ModalBackground, ModalContent, ModalHeader, ModalTitle, ModalCloseButton, ModalBody, ModalButton } from './NavbarStyledComponent'
 import { DiCssdeck } from 'react-icons/di';
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
@@ -9,8 +9,14 @@ import AnimatedText from '../Navbar/AnimatedText';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isCVModalOpen, setCVModalOpen] = React.useState(false);
+  const downloadCV = (version) => {
+    const link = version === 'pl' ? Bio.resume : Bio.resumeEn;
+    window.open(link, '_blank');
+    setCVModalOpen(false); // Zamknij modal po pobraniu
+  };
   const theme = useTheme()
-  return (
+return (
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
@@ -31,8 +37,22 @@ const Navbar = () => {
           <NavLink href='#contact'>Contact</NavLink>
         </NavItems>
         <ButtonContainer>
-          <CVButton href={Bio.resume} target="_blank">Download CV</CVButton>
+          <CVButton onClick={() => setCVModalOpen(true)}>Download CV</CVButton>
         </ButtonContainer>
+        {isCVModalOpen && (
+        <ModalBackground onClick={() => setCVModalOpen(false)}>
+          <ModalContent onClick={(e) => e.stopPropagation()}>
+            <ModalHeader>
+              <ModalTitle>Select CV version</ModalTitle>
+              <ModalCloseButton onClick={() => setCVModalOpen(false)}>&times;</ModalCloseButton>
+            </ModalHeader>
+            <ModalBody>
+              <ModalButton onClick={() => window.open(Bio.resume, '_blank')}>Polish </ModalButton>
+              <ModalButton onClick={() => window.open(Bio.resumeEn, '_blank')}>English</ModalButton>
+            </ModalBody>
+          </ModalContent>
+        </ModalBackground>
+      )}
         {
           isOpen &&
           <MobileMenu isOpen={isOpen} className='custom'>
@@ -51,7 +71,7 @@ const Navbar = () => {
             <MobileLink href='#contact' onClick={() => {
               setIsOpen(!isOpen)
             }}>Contact</MobileLink>
-            <CVButton style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}} href={Bio.resume} target="_blank">Download CV</CVButton>
+            <CVButton onClick={() => setCVModalOpen(true)} style={{padding: '10px 16px',background: `${theme.text_primary}`, color: 'white',width: 'max-content'}}>Download CV</CVButton>
           </MobileMenu>
         }
       </NavbarContainer>
