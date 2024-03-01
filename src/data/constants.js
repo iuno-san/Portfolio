@@ -49,6 +49,11 @@ export const skills = [
           "https://vectorwiki.com/images/kYNj1__blazor.svg",
       },
       {
+      name: "Vue.js",
+      image:
+        "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+      },
+      {
         name: "Angular",
         image:
           "https://www.vectorlogo.zone/logos/angular/angular-icon.svg",
