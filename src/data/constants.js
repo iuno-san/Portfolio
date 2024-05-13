@@ -132,8 +132,8 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://www.chillcode.org/img/Icons/icon_c-sharp(1).png",
-    role: "C# programming Tutor",
+    img: "https://raw.githubusercontent.com/Chillcode-Official/ChillCode/main/img/Icons/icon_c-sharp.png",
+    role: "Programming Tutor",
     company: "FreeLancer",
     date: "November 2022 - June 2023",
     desc: "I mentored young, aspiring programmer named Arthur in game development using Unity. I conducted meetings to discuss programming concepts game mechanics and best practices and taught him to use Unity environment efficiently to write code in C# and touse GitHub",
@@ -156,7 +156,7 @@ export const projects = [
     description:
       "ChillCode is a platform for learning programming with an extensive database of tutorials ",
     image:
-      "https://camo.githubusercontent.com/e3f4f815ad9fe504eea66078ff24040ce917385ee5f3cbb9a7553a90aae5fcd6/68747470733a2f2f7777772e6368696c6c636f64652e6f72672f696d672f4f74686572732f626c6f672d696d672831292e706e67",
+      "https://raw.githubusercontent.com/Chillcode-Official/ChillCode/main/img/Others/blog-img(1).png",
     tags: ["Website", "Coding", "Tutorials", "Platform", "HTML"],
     category: "live app",
     github: "https://github.com/Chillcode-Official",
