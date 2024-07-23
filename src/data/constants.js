@@ -159,14 +159,14 @@ export const projects = [
       "https://raw.githubusercontent.com/iuno-san/ChillCode/main/chillcode/img/Others/blog-img(1).png",
     tags: ["Website", "Coding", "Tutorials", "Platform", "HTML"],
     category: "live app",
-    github: "https://github.com/Chillcode-Official",
+    github: "https://github.com/iuno-san/ChillCode",
     webapp: "https://chillcode.vercel.app",
     member: [
       {
         name: "Ignacy Starczynski",
         img: "https://avatars.githubusercontent.com/u/117463347?s=64&v=4",
         linkedin: "https://www.linkedin.com/in/ignacy-starczynski-8030b2284/",
-        github: "https://github.com/iuno-san/ChillCode",
+        github: "https://github.com/iuno-san",
       },
     ],
   },
