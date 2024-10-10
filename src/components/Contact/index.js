@@ -92,7 +92,7 @@ const Contact = () => {
             alt="Email icon"
             className='icon contact-icon email-icon'
           />
-          <p><a href="mailto:ignacysan27@gmail.com">ignacysan27@gmail.com</a></p>
+          <p><a href="mailto:ignacydev01@gmail.com">ignacydev01@gmail.com</a></p>
         </div>
         <div className='contact-info-container custom'>
           <img
