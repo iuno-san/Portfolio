@@ -1,10 +1,10 @@
 export const Bio = {
   name: "Ignacy Starczynski",
   roles: [
+    "Software Engineer",
     "C#/.NET Developer",
+    "Web Designer",
     "FullStack Developer",
-    "App Designer",
-    "Programmer",
   ],
   description:
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
@@ -130,7 +130,7 @@ export const experiences = [
     ],
     doc: 'https://raw.githubusercontent.com/iuno-san/Portfolio/main/src/images/4Ad-site.jpg',
   },
-  {
+  /*{
     id: 2,
     img: "https://raw.githubusercontent.com/iuno-san/ChillCode/main/chillcode/img/Icons/icon_c-sharp.png",
     role: "Programming Tutor",
@@ -144,7 +144,7 @@ export const experiences = [
       "Design game",
     ],
 
-  },
+  },*/
 ];
 
 
@@ -206,9 +206,8 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/iuno-san/HexaLingo/main/HexaLingo/wwwroot/img/others/Baner_Main.png",
     tags: ["ASP.NET", "MVC", "Learning", "VPS-server",],
-    category: ["dotnet app", "live app"],
+    category: ["dotnet app"],
     github: "https://github.com/iuno-san/HexaLingo",
-    webapp: "https://hexalingo.com/",
     member: [
       {
         name: "Ignacy Starczynski",
@@ -227,9 +226,9 @@ export const projects = [
     image:
       "https://raw.githubusercontent.com/iuno-san/TTodo/main/demo_img.png",
     tags: ["React JS", "To Do", "CRUD", "App"],
-    category: "react app",
+    category: ["react app", "live app"],
     github: "https://github.com/iuno-san/TTodo",
-    webapp: "Live app unavailable",
+    webapp: "https://t-todo-chi.vercel.app",
     member: [
       {
         name: "Ignacy Starczynski",
@@ -315,7 +314,7 @@ export const projects = [
     description:
       "FinanseFocus is an application created in Angular that allows you to manage your budget in a simple and effective way. It uses CRUD operations, allowing you to add, edit, delete and view expenses.",
     image:
-      "https://raw.githubusercontent.com/iuno-san/FinanseFocus/master/FinanseFocus/src/assets/Preview_img.png",
+      "https://raw.githubusercontent.com/iuno-san/FinanceFocus/refs/heads/master/financefocus/public/Preview_img.png",
     tags: ["AngularJs", "Finance", "CRUD", "APP"],
     category: ["react app"],
     github: "https://github.com/iuno-san/FinanseFocus",
